@@ -1,0 +1,37 @@
+<html>
+<head>
+<style>
+#a
+{
+writing-mode:vertical-lr:
+}
+#b
+{
+writing-mode:vertical-rl;
+transform:rotate(180deg);
+}
+#c
+writing-mode:vertical-rl;
+
+}
+#d
+{
+writing-mode:vertical-lr;
+transform:rotate(180deg);
+}
+.p{
+    margin-left:70px;
+}
+</style>
+</head>
+<body>
+<div style="border:2px solid black;width:600px;line-height:20px;">
+<span style="float:left;">Horizontal</span>
+<span id="a"class="p">Vartical left to right</span>
+<span id="c"class="p">Vartical right to left</span>
+
+<span id="b"class="p">Sideway right to left</span>
+<span id="d"class="p">Sideway left to right</span>
+</div>
+</body>
+</html>
