@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <style>
+            .outerTb{
+                border:1px solid red;
+            }
+            .innerTb{
+                border:2px solid purple;
+            }
+        </style>
+    </head>
+    <body>
+        <table class="outerTb" cellpadding="15px">
+            <tr>
+                <td class="outerTb">Table 1</td>
+                <td class="outerTb">Table 1
+                  <table class="innerTb" cellpadding="15px">
+                      <tr>
+                          <td class="innerTb">Table 2</td>
+                          <td class="innerTb">Table 2</td>
+                      </tr>
+                      <tr>
+                          <td class="innerTb">Table 2</td>
+                          <td class="innerTb">Table 2</td>
+                      </tr>
+                    </table>  
+                </td>
+            </tr>
+            <tr>
+                <td class="outerTb">Table 1</td>
+                <td class="outerTb">Table 1</td>
+            </tr>
+        </table>
+    </body>
+</html>
