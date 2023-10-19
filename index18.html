@@ -1,0 +1,105 @@
+<html>
+<head>
+<style>
+body
+{
+background:url("abhi.jpg");
+background-size:cover;
+overflow-x:hidden;
+}
+#box
+{
+min-height:300px;
+width:400px;
+position:absolute;
+right:-350;
+top:120px;
+transition:all .5s;
+}
+#box:hover
+{
+right:0px;
+transition:all 1s;
+}
+#left
+{
+min-height:300px;
+width:50px;
+float:left;
+}
+#right
+{
+min-height:300px;
+width:350px;
+float:left;
+background:rgba(255,255,255,.1);
+border-radius:5px 0px 0px 5px;
+text-align:center;
+font-size:26px;
+padding-top:22px;
+border-sizing:border-box;
+}
+.a
+{
+height:50px;
+width:50px;
+}
+.b
+{
+height:200px;
+width:50px;
+background:rgba(255,255,255,.6);
+border-radius:5px 0px 0px 5px;
+text-align:center;
+font-size:26px;
+padding-top:22px;
+border-sizing:border-box;
+box-shadow:0px 0px 15px 2px black;
+
+}
+.t
+{
+height:50px;
+width:100%;
+background:#f3f3f3;
+border:none;
+margin-bottom:10px;
+margin-left:50px;
+font-size:15px;
+padding-left:15px;
+box-sizing:border-box;
+border-radius:5px;
+color:red;
+}
+.bton
+{
+width:50px;
+height:100%;
+background:linear-gradient(45deg,red,red);
+border:none;
+margin-left:50px;
+border-radius:5px;
+border:1px solid black;
+color:white;
+}
+</style>
+</head>
+<body>
+<div id="box">
+<div id="left">
+<div class="a"></div>
+<div class="b">
+L<br>O<br>G<br>I<br>N
+</div>
+<div class="a"></div>
+</div>
+<div id="right">
+<div style="font-size:25px;text-align:center;">LOGIN<b style="color:red;">FORM..</b></div>
+USERNAME<br/>
+<input type="email"class="t"placeholder="username"/><br><br>
+<input type="email"name="full name"class="t"placeholder="password"/><br><br>
+<input type="submit"class="bton"value="Login"/>
+</div>
+</div>
+</body>
+</html>

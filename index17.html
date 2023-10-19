@@ -1,0 +1,71 @@
+<html>
+<head>
+<style>
+body
+{
+background:linear-gradient(45deg,#1e9bfa,#06f7a9);
+}
+#box
+{
+min-height:300px;
+width:450px;
+background:white;
+margin:110px auto;
+border-radius:8px;
+padding:30px;
+box-sizing:border-box;
+
+}
+.h
+{
+font-size:30px;
+text-align:center;
+
+}
+.t
+{
+width:100%;
+height:55px;
+background:#f3f3f3;
+border:none;
+margin-bottom:10px;
+font-size:18px;
+padding-left:15px;
+b0x-sizing:border-box;
+border-radius:5px;
+}
+.b
+{
+width:100%;
+height:55px;
+background:linear-gradient(45deg,#1e9bfa,#06f7a9);
+border:none;
+border-radius:5px;
+}
+
+::placeholder
+{
+color:#1e9bfa
+}
+#box:hover
+{
+box-shadow:0px 0px  0px 15px
+rgba(255,255,255,.8),0px 0px  0px 30px
+rgba(255,255,255,.6),0px 0px  20px 45px
+rgba(255,255,255,.4);
+transition:all 1s;
+background:rgba(0,0,0,5);
+}
+
+</style>
+</head>
+<body>
+<div id="box">
+<div class="h">LOGIN<b style="color:#1e9bfa">FORM</b></div>
+<div style="text-align:center;">Welcome to Admin Login</div>
+<input type="email"class="t"placeholder="USERNAME"/><br>
+<input type="password"class="t"placeholder="password"/><br>
+<input type="submit"class="b"value="Login"/>
+</div>
+</body>
+</html>

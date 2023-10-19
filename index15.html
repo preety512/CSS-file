@@ -1,0 +1,60 @@
+<html>
+<head>
+<style>
+#outer
+{
+height:600px;
+width:1200px;
+border:1px solid black;
+margin:0px auto;
+}
+.row
+{
+height:300px;
+width:1200px;
+background:gray
+}
+.col
+{
+height:250px;
+width:350px;
+float:left;
+background:blue;
+margin:25px;
+border-radius:5px;
+padding:10px;
+box-sizing:border-box;
+transition:all 1s;
+}
+.col img
+{
+height:100%;
+width:100%;
+border:5px groove gray;
+box-sizing:border-box;
+}
+.col:hover
+{
+box-shadow:0px 30px 1px black;
+background:white;
+transition:all 1s;
+filter:grayscale(60%);
+}
+</style>
+</head>
+<body>
+<div id="outer">
+<div class="row">
+<div class="col"><img src="pree.jpg"/></div>
+<div class="col"><img src="pree.jpg"/></div>
+<div class="col"><img src="pree.jpg"/></div>
+</div>
+<div class="row">
+<div class="col"><img src="pree.jpg"/></div>
+<div class="col"><img src="pree.jpg"/></div>
+<div class="col"><img src="pree.jpg"/></div>
+</div>
+
+</div>
+</body>
+</html>
