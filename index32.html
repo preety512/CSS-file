@@ -1,0 +1,78 @@
+<html>
+<head>
+<style>
+div{
+height:50px;
+width:200px;
+background:red;
+border:5px groove yellow;
+font-size:30px;
+font-weight:bold;
+color:white;
+text-align:center;
+line-height:50px;
+}
+#dv1
+{
+background:navy;
+animation:abc;
+animation-duration:5s;
+animation-iteration-count:infinite;
+animation-timing-function:linear;
+animation-direction:alternate;
+}
+#dv2
+{
+background:pink;
+animation:abc;
+animation-duration:5s;
+animation-iteration-count:infinite;
+animation-timing-function:ease;
+animation-direction:alternate;
+}
+#dv3
+{
+background:purple;
+animation:abc;
+animation-duration:5s;
+animation-iteration-count:infinite;
+animation-timing-function:ease-in-out;
+animation-direction:alternate;
+}
+#dv4
+{
+background:maroon;
+animation:abc;
+animation-duration:5s;
+animation-iteration-count:infinite;
+animation-timing-function:ease-in;
+animation-direction:alternate;
+}
+#dv5
+{
+background:aqua;
+animation:abc;
+animation-duration:5s;
+animation-iteration-count:infinite;
+animation-timing-function:ease-out;
+animation-direction:alternate;
+}
+@keyframes abc
+{
+from{
+width:200px;
+}
+to{
+width:1000px;
+}
+}
+</style>
+</head>
+<body>
+<div id="dv1">LINEAR</div>
+<div id="dv2">EASE</div>
+<div id="dv3">EASE-IN-OUT</div>
+<div id="dv4">EASE-IN</div>
+<div id="dv5">EASE-OUT</div>
+</body>
+</html>
