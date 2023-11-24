@@ -1,0 +1,534 @@
+<html>
+<head>
+<style>
+#box
+{
+min-height:550px;
+width:1200px;
+background:white;
+}
+#a
+{
+height:150px;
+width:1200px;
+background:blue;
+}
+#a1
+{
+height:150px;
+width:600px;
+background:black;
+float:left;
+}
+#a2
+{
+height:150px;
+width:600px;
+background:black;
+float:left;
+}
+ul{
+list-style-type: none;
+}
+#a1 ul li{
+height:95px;
+width:120px;
+float:left;
+margin-left:1px;
+font-size:30px;
+color:white;
+line-height:95px;
+background:black;
+text-align:center;
+font-weight:bold;
+margin-right:10px;
+transform:translate(-16,18);
+transition:all .5s;
+}
+ul{
+list-style-type: none;
+}
+#a2 ul li{
+height:95px;
+width:120px;
+float:left;
+margin-left:1px;
+font-size:30px;
+color:white;
+line-height:95px;
+background:black;
+text-align:center;
+font-weight:bold;
+margin-right:10px;
+transform:translate(-16,18);
+transition:all .5s;
+}
+.a3
+{
+font-size:20px;
+background:white;
+border-radius:20px;
+color:black;
+margin-top:40px;
+}
+#b
+{
+height:600px;
+width:1200px;
+background:blue;
+}
+#b1
+{
+height:500px;
+width:500px;
+position:absolute;
+background:white;
+left:100;
+top:180px;
+transition:all .5s;
+}
+#b2
+{
+height:150px;
+width:500px;
+background:white;
+}
+#b3
+{
+height:350px;
+width:500px;
+background:white;
+}
+ul{
+list-style-type: none;
+}
+#b2 ul li{
+height:150px;
+width:150px;
+float:left;
+font-size:20px;
+color:black;
+padding:30px;
+text-decoration: underline solid 1px black;
+box-sizing:border-box;
+background:white;
+text-align:center;
+font-weight:bold;
+transform:translate(-16,18);
+transition:all .5s;
+}
+.t{
+width:70%;
+height:55px;
+background:#f3f3f3;
+border:none;
+margin-bottom:10px;
+margin-left:50px;
+font-size:15px;
+padding-left:20px;
+box-sizing:border-box;
+border-radius:5px;
+}
+.bttn
+{
+width:30%;
+height:45px;
+background:black;
+border:none;
+margin-left:50px;
+border-radius:2px;
+border:1px solid black;
+color:white;
+}
+.bttn1
+{
+width:30%;
+height:45px;
+background:#f3f3f3;
+border:none;
+margin-left:50px;
+border-radius:2px;
+border:1px solid black;
+color:black;
+}
+#c
+{
+height:300px;
+width:1200px;
+background:blue;
+}
+#d
+{
+height:800px;
+width:1200px;
+background:white;
+}
+#d1
+{
+height:100px;
+width:1200px;
+background:white;
+line-height:100px;
+font-size:30px;
+font-weight:bold;
+color:black;
+text-align:center;
+}
+#d2
+{
+height:700px;
+width:1200px;
+background:white;
+}
+#d3
+{
+height:700px;
+width:600px;
+background:white;
+float:left;
+}
+.d5
+{
+height:300px;
+width:500px;
+background:white;
+margin:50px;
+}
+.d6
+{
+height:200px;
+width:500px;
+background:white;
+margin:50px;
+}
+#d4
+{
+height:700px;
+width:600px;
+background:white;
+float:left;
+}
+#e
+{
+height:100px;
+width:1200px;
+background:white;
+}
+span{
+font-size:30px;
+line-height:100px;
+margin:50px;
+text-decoration:underline 1px black;
+}
+#f
+{
+height:400px;
+width:1200px;
+background:white;
+}
+.f1
+{
+height:300px;
+width:300px;
+background:white;
+float:left;
+margin:50px;
+color:black;
+}
+.f2
+{
+height:300px;
+width:300px;
+background:white;
+float:left;
+margin:50px;
+color:black;
+}
+.f3
+{
+height:300px;
+width:300px;
+background:white;
+float:left;
+margin:50px;
+color:black;
+}
+#g
+{
+height:800px;
+width:1200px;
+background:white;
+}
+#g1
+{
+height:100px;
+width:1100px;
+background:white;
+font-size:20px;
+margin-left:50px;
+}
+#g2
+{
+height:700px;
+width:1200px;
+background:white;
+}
+#g3
+{
+height:700px;
+width:300px;
+background:white;
+float:left;
+}
+#g7
+{
+height:250px;
+width:200px;
+background:white;
+margin:50px;
+}
+#g8
+{
+height:250px;
+width:200px;
+background:white;
+margin:50px;
+}
+#g4
+{
+height:700px;
+width:300px;
+background:white;
+float:left;
+}
+#g9
+{
+height:250px;
+width:200px;
+background:white;
+margin:50px;
+}
+#g10
+{
+height:250px;
+width:200px;
+background:white;
+margin:50px;
+}
+#g5
+{
+height:700px;
+width:300px;
+background:white;
+float:left;
+}
+#g11
+{
+height:250px;
+width:200px;
+background:white;
+margin:50px;
+}
+#g12
+{
+height:250px;
+width:200px;
+background:white;
+margin:50px;
+}
+#g6
+{
+height:700px;
+width:300px;
+background:white;
+float:left;
+}
+#g13
+{
+height:250px;
+width:200px;
+background:white;
+margin:50px;
+}
+#g14
+{
+height:250px;
+width:200px;
+background:white;
+margin:50px;
+}
+#h
+{
+height:600px;
+width:1200px;
+background:white;
+}
+#h1
+{
+height:100px;
+width:1200px;
+background:#e8e8e8;
+font-size:30px;
+line-height:100px;
+}
+#h2
+{
+height:500px;
+width:1200px;
+background:#e8e8e8;
+}
+#h3
+{
+height:250px;
+width:500px;
+background:white;
+float:left;
+margin-left:50px;
+margin-top:150px;
+}
+#h5
+{
+height:250px;
+width:200px;
+background:white;
+float:left;
+}
+#h6
+{
+height:250px;
+width:300px;
+background:white;
+float:left;
+}
+#h4
+{
+height:250px;
+width:500px;
+background:white;
+margin-left:50px;
+float:left;
+margin-top:150px;
+}
+#h7
+{
+height:250px;
+width:200px;
+background:white;
+float:left;
+}
+#h8
+{
+height:250px;
+width:300px;
+background:white;
+float:left;
+}
+</style>
+</head>
+<body>
+<div id="box">
+<div id="a">
+<div id="a1">
+<ul>
+<li>Uber</li>
+<li>company</li>
+<li>sefty</li>
+<li>Help</li>
+</ul>
+</div>
+<div id="a2">
+<ul>
+<li>EN</li>
+<li>Product</li>
+<li>Login</li>
+<input class="a3"type="submit"value="Sign up"/>
+</ul>
+</div>
+</div>
+<div id="b"><img src="car.jpg"style="height:600px;width:1200px;"/>
+<div id="b1">
+<div id="b2">
+<ul>
+<li>Ride</li>
+<li>Driver or deliver</li>
+<li>Rent your fleet</li>
+</ul>
+</div>
+<div id="b3">
+<h1 style="padding-left:30px;box-sizing:border-box;font-size:40px;font-weight:bold;">Request a ride now</h1>
+<input class="t" type="text"placeholder="Enter pikup location"/>
+<input class="t" type="text"placeholder="Enter destination"/>
+<input class="bttn" type="submit"value="Request now"/>
+<input class="bttn1" type="submit"value="Schedule for later"/>
+</div>
+</div>
+</div>
+<div id="c"><img src="img6.png"style="height:300px;width:1200px;"/>
+</div>
+<div id="d">
+<div id="d1">Focused on safety,wherever you go</div>
+<div id="d2">
+<div id="d3">
+<div class="d5"><img src="img10.jpg"style="height:300px;width:500px;"/></div>
+<div class="d6"><h2 style="font-weight:bold;font-size:30px;">Our commitment to your safety</h2><p style="font-size:25px;">Richard McClintock, a Latin professor at Hampden-Sydney 
+ College in Virginia,Richard McClintock, a Latin professor at Hampden-Sydney 
+ College in Virginia,  </p></div>
+</div>
+<div id="d4">
+<div class="d5"><img src="img8.jpg"style="height:300px;width:500px;"/></div>
+<div class="d6"><h2 style="font-weight:bold;font-size:30px;">Setting 10,000+cities in motion</h2><p style="font-size:25px;">Richard McClintock, a Latin professor at Hampden-Sydney 
+ College in Virginia,Richard McClintock, a Latin professor at Hampden-Sydney 
+ College in Virginia,  </p></div>
+</div>
+</div>
+</div>
+<div id="e"><span>Red about our community Gudidelines</span> <span>See all safty features</span><span>view cities</span></div>
+<div id="f">
+<div class="f1"><img src="icon.png"style="height:50px;width:50px;"/><h1>About us</h1><p style="font-size:20px;">College in Virginia,Richard McClintock, a Latin professor at Hampden-Sydney 
+ College in Virginia,</p><u style="font-size:20px;">Learn more about Uber</u></div>
+<div class="f2"><img src="icon3.png"style="height:50px;width:50px;"/><h1>Newsroom</h1><p style="font-size:20px;">College in Virginia,Richard McClintock, a Latin professor at Hampden-Sydney 
+ College in Virginia,</p><u style="font-size:20px;">Go to Newsroom</u></div>
+<div class="f3"><img src="icon4.png"style="height:50px;width:50px;"/><h1>Global citizenship</h1><p style="font-size:20px;">College in Virginia,Richard McClintock, a Latin professor at Hampden-Sydney 
+ College in Virginia,</p><u style="font-size:20px;">See our partnership</u></div>
+</div>
+<div id="g">
+<div id="g1"><h1>Ride with Uber</h1></div>
+<div id="g2">
+<div id="g3">
+<div id="g7"><img src="cng.jpg"style="height:250px;width:200px;"/></div>
+<div id="g8"><img src="car3.jpg"style="height:250px;width:200px;"/></div>
+</div>
+<div id="g4">
+<div id="g9"><h1>Uber Auto</h1><p style="font-size:20px;">College in Virginia,Richard McClintock, a Latin professor at Hampden-Sydney 
+ College in Virginia,</p></div>
+<div id="g10"><h1>Uber Moto</h1><p style="font-size:20px;">College in Virginia,Richard McClintock, a Latin professor at Hampden-Sydney 
+ College in Virginia,</p></div>
+</div>
+<div id="g5">
+<div id="g11"><img src="moter.jpg"style="height:250px;width:200px;"/></div>
+<div id="g12"><img src="car3.jpg"style="height:250px;width:200px;"/></div>
+</div>
+<div id="g6">
+<div id="g13"><h1>Uber Rental</h1><p style="font-size:20px;">College in Virginia,Richard McClintock, a Latin professor at Hampden-Sydney 
+ College in Virginia,</p></div>
+<div id="g14"><h1>Uber Intercity</h1><p style="font-size:20px;">College in Virginia,Richard McClintock, a Latin professor at Hampden-Sydney 
+ College in Virginia,</p></div>
+</div>
+</div>
+</div>
+<div id="h">
+<div id="h1">It's easier the aaps</div>
+<div id="h2">
+<div id="h3">
+<div id="h5"><img src="qr.png"style="height:200px;width:150px;"/></div>
+<div id="h6"><h1>Download the Uber app</h1><p>Scan to download </p></div>
+</div>
+<div id="h4">
+<div id="h7"><img src="qr.png"style="height:200px;width:150px;"/></div>
+<div id="h8"><h1>Download the Driver app</h1><p>Scan to download </p></div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
