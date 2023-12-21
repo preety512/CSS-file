@@ -1,0 +1,484 @@
+<html>
+<head>
+<style>
+:root{
+--bg-mycolor:#fe6500;
+--text-mycolor:#fe6500;
+}
+::-webkit-scrollbar{
+width:8px;
+height:8px;
+}
+::-webkit-scrollbar-track{
+background:linear-gradient(45deg,aqua,var(--bg-mycolor));
+box-shadow:0px 0px 5px black inset;
+}
+::-webkit-scrollbar-thumb{
+background:linear-gradient(45deg,aqua,var(--bg-mycolor));
+border-radius:20px;
+}
+::-webkit-scrollbar-corner{
+background:green;
+}
+.bg-mycolor{
+background:var(--bg-mycolor); !important;
+}
+.text-mycolor{
+color:var(--text-mycolor);!important;
+}
+#outer{
+min-height:1000;
+width:1200px;
+margin:0px auto;
+border:1px solid black;
+}
+#header
+{
+height:50px;
+width:1200px;
+background:black;
+}
+#logo
+{
+height:50px;
+width:300px;
+float:left;
+padding:5px 45px;
+box-sizing:border-box;
+}
+#logo img{
+height:100%;
+}
+#menu
+{
+height:50px;
+width:900px;
+padding-left:50px;
+box-sizing:border-box;
+float:left;
+}
+#menu ul{
+list-style:none;
+}
+#menu ul li {
+height:35px;
+width:100px;
+line-height:35px;
+font-size:20px;
+transform:translatey(-8px);
+color:white;
+text-align:center;
+transition:all .5s;
+margin-left:2px;
+float:left;
+}
+#header1{
+height:35px;
+width:1200px;
+display:flex;
+}
+.r{
+height:35px;
+width:300px;
+line-height:35px;
+text-align:center;
+padding:5px 10px;
+box-sizing:border-box;
+}
+.r a{
+text-decoration:none;
+color:#000000;
+}
+.r img{
+height:30px;
+}
+#menu ul li:hover
+{
+background:var(--bg-mycolor);
+transition:all .5s;
+}
+#slider{
+height:500px;
+width:1200px;
+background:url('rode.jpg');
+background-size:cover;
+background-attachment:fixed;
+}
+#slider1{
+height:500px;
+width:1200px;
+background:rgba(0,0,0,.5);
+}
+#s1{
+height:425px;
+width:400px;
+background:rgba(255,255,255,.6);
+float:left;
+margin:25px 50px;
+border-radius:5px;
+}
+#s2{
+height:475px;
+width:700px;
+float:left;
+text-align:center;
+color:white;
+font-size:20px;
+padding:160px 50px 10px 50px ;
+box-sizing:border-box;
+}
+.t{
+height:50px;
+width:90%;
+border-radius:2px;
+margin-top:20px;
+margin-left:10px;
+border:none;
+padding-left:15px;
+box-sizing:border-box;
+}
+.ta{
+height:80px;
+width:90%;
+border-radius:2px;
+margin-top:20px;
+margin-left:10px;
+border:none;
+padding-left:15px;
+box-sizing:border-box;
+resize:none;
+}
+.btn{
+height:50px;
+width:90%;
+border-radius:2px;
+margin-top:20px;
+border:none;
+padding-left:15px;
+margin-left:10px;
+box-sizing:border-box;
+color:white;
+background:var(--bg-mycolor);
+}
+#services{
+min-height:180px;
+width:1200px;
+background:#e8e8ff;
+padding:10px 100px;
+box-sizing:border-box;
+}
+.s1{
+min-height:130px;
+width:230px;
+float:left;
+background:rgba(0,0,0,.6);
+margin:10px; 
+border-radius:5px;
+//box-shadow:0px 0px 25px black;
+color:white;
+transition:all .5s;
+text-align:center;
+font-size:22px;
+line-height:130px;
+}
+.s1:hover{
+background:white;
+transform:scale(1.04);
+color:rgba(0,0,0,.8);
+transition:all .5s;
+}
+#content{
+min-height:500px;
+width:1200px;
+padding:15px 30px;
+boxe-sizing:border-box;
+}
+#content p{
+column-count:4;
+text-align:justify;
+column-gap:10px;
+column-rule:10px groove rgba(0,0,0,.3);
+}
+#register{
+min-height:500px;
+width:1200px;
+background:rgba(0,0,0,.80);
+}
+#gallery
+{
+min-height:600px;
+width:1200px;
+padding:15px 150px;
+box-sizing:border-box;
+}
+.row{
+height:200px;
+width:900px;
+}
+.col{
+height:160px;
+width:260px;
+float:left;
+background:red;
+margin:20px;
+}
+.c1{
+background:url('car.jpg');
+background-size:cover;
+}
+.c2{
+background:url('caffe.jpg');
+background-size:cover;
+}
+.c3{
+background:url('caffe.jpg');
+background-size:cover;
+}
+.c4{
+background:url('caffe.jpg');
+background-size:cover;
+}
+.c5{
+background:url('caffe.jpg');
+background-size:cover;
+}
+.c6{
+background:url('caffe.jpg');
+background-size:cover;
+}
+.col div{
+height:100%;
+width:100%;
+background:rgba(0,0,0,.5);
+text-align:center;
+color:white;
+font-size:22px;
+line-height:150px;
+}
+.col div:hover{
+transform:perspective(500px) rotatex(80deg);
+transition:all .5s;
+transform:origin:top;
+background:rgba(254,101,0,.1);
+}
+#team{
+min-height:400px;
+width:1200px;
+background:url('bullding.jpg');
+background-size:cover;
+background-attachment:fixed;
+}
+#team1{
+min-height:400px;
+width:1200px;
+background:rgba(0,0,0,.4);
+}
+.row1{
+height:400px;
+width:1200px;
+padding-left:50px;
+box-sizing:border-box;
+}
+.col7{
+height:300px;
+width:240px;
+float:left;
+background:white;
+margin:50px;
+border-radius:30px 30px 0px 0px;
+}
+.col8{
+height:100px;
+width:240px;
+background:white;
+border-bottom:35px solid #f2f2f2;
+box-sizing:border-box;
+border-radius:30px 30px 0px 0px;
+}
+.col9{
+height:200px;
+width:240px;
+background:#f2f2f2;
+text-align:center;
+color:#d3d3d3;
+font-weight:bold;
+}
+.v{
+text-align:center;
+color:#9f9f9f;
+}
+#footer2{
+min-height:500px;
+width:1200px;
+background:rgba(0,0,0,.8);
+}
+.heading{
+text-align:center;
+font-size:30px;
+}
+</style>
+</head>
+<body>
+<div id="outer">
+<div id="header">
+<div id="logo"><img src="amazon1.png"/></div>
+<div id="menu">
+<ul>
+<a href="#"><li>Home</li></a>
+<a href="#"><li>About us</li></a>
+<a href="#"><li>Register</li></a>
+<a href="#"><li>Services</li></a>
+<a href="#"><li>Contact us</li></a>
+<a href="#"><li>Gllary</li></a>
+<a href="#"><li>Login</li></a>
+</ul>
+</div>
+</div>
+<div id="header1">
+<div class="r"><a href="tel:+918765218819">+91,8765218819</a></div>
+<div class="r"><a href="mailto:techpilelko@gmail.com">techpilelko@gmail.com</a></div>
+<div class="r"><a href="Welcom to codehelper ">welcom to codehelper</a></div>
+<div class="r"><img src="icon1.png"><img src="icon1.png"><img src="icon1.png"></div>
+</div>
+<div id="slider">
+<div id="slider1">
+<div id="s1">
+<form>
+<input type="text" class="t"required placeholder="Name.."><br/>
+<input type="number"class="t"required placeholder="Mobile.."><br/>
+<input type="Email"class="t"required placeholder="Email.."><br/>
+<textarea class="ta"required placeholder="Message.."></textarea><br/>
+<input class="btn" type="submit"value="Submit">
+</form>
+</div>
+<div id="s2"><div style="font-size:45px;">welcom to <b class="text-mycolor">codehelper</b></div><br/>
+welcom to codehelperwelcom to codehelperwelcom to codehelperwelcom
+ to codehelperwelcom
+ to codehelperwelcom to codehelper<br><br>
+ <a href="#"class="bg-mycolor"style="text-decoration:none;color:white;padding:12px;border-radius:5px;font-size:17px;">Register Now</a>
+</div>
+</div>
+</div>
+<div id="services">
+<div class="s1">Summer Training</div>
+<div class="s1">IT Training</div>
+<div class="s1">Winter Training</div>
+<div class="s1">Apprenticship Training</div>
+</div>
+<div id="content">
+<div class="heading">About <b class="text-mycolor">us</b></div>
+<p>
+Lrem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'
+ndard dummy text ever since the 1500s, when an unknown printer took a galley of
+orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'
+ndard dummy text ever since the 1500s, when an unknown printer took a galley of
+orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'
+ndard dummy text ever since the 1500s, when an unknown printer took a galley of
+orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'
+ndard dummy text ever since the 1500s, when an unknown printer took a galley of
+orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'
+ndard dummy text ever since the 1500s, when an unknown printer took a galley of
+orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'
+ndard dummy text ever since the 1500s, when an unknown printer took a galley oforem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'
+ndard dummy text ever since the 1500s, when an unknown printer took a galley oforem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'
+ndard dummy text ever since the 1500s, when an unknown printer took a galley oforem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'
+ndard dummy text ever since the 1500s, when an unknown printer took a galley oforem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'
+ of
+<p>
+</div>
+
+<div id="gallery"><div class="heading">Image <b class="text-mycolor">gallery</b></div>
+<div class="row">
+<div class="col c1"><div>Deccripition1</div></div>
+<div class="col c2"><div>Deccripition2</div></div>
+<div class="col c3"><div>Deccripition3</div></div>
+</div>
+<div class="row">
+<div class="col c4"><div>Deccripition4</div></div>
+<div class="col c5"><div>Deccripition5</div></div>
+<div class="col c6"><div>Deccripition6</div></div>
+</div>
+</div>
+<div id="team">
+<div id="team1"><div class="heading">OUR TEAM MEMBERS <p style="font-size:22px;color:gray;">MEET OUR TEAM!</p></div>
+<div class="row1">
+<div class="col7 c7">
+<div class="col8 c8"><center><img src="womenimg3.jpg" style="border-radius:50%;height:80px;width:80px;transform:translatey(10px);"></center></div>
+<div class="col9 c9"><div class="text-mycolor"style="text-align:center;font-size:25px;">Jeremy Flores</div>CEO/Director<p class="v">Ipsum is simply dummy text</p>
+<p class="v">Ipsum is simply dummy text</p><p class="v">Ipsum is simply</p>
+<input type="submit"value="Your mall gose here"style="width:98%;height:30px;border:none;background:linear-gradient(65deg,yellow,red);color:white;text-align:center;"/>
+</div>
+</div>
+<div class="col7 c7">
+<div class="col8 c8"><center><img src="womenimg3.jpg" style="border-radius:50%;height:80px;width:80px;transform:translatey(10px);"></center></div>
+<div class="col9 c9"><div style="text-align:center;font-size:25px;color:purple;">Megan Johsnton</div>CEO/Director<p class="v">Ipsum is simply dummy text</p>
+<p class="v">Ipsum is simply dummy text</p><p class="v">Ipsum is simply</p>
+<input type="submit"value="Your mall gose here"style="width:98%;height:30px;border:none;background:linear-gradient(65deg,#fd00fd,purple);color:white;text-align:center;"/>
+</div>
+</div>
+<div class="col7 c7">
+<div class="col8 c8"><center><img src="womenimg3.jpg" style="border-radius:50%;height:80px;width:80px;transform:translatey(10px);"></center></div>
+<div class="col9 c9"><div style="text-align:center;font-size:25px;color:aqua;">Jack Delgado</div>CEO/Director<p class="v">Ipsum is simply dummy text</p>
+<p class="v">Ipsum is simply dummy text</p><p class="v">Ipsum is simply</p>
+<input type="submit"value="Your mall gose here"style="width:98%;height:30px;border:none;background:linear-gradient(65deg,aqua,#00dfdf);color:white;text-align:center;"/>
+</div>
+</div>
+</div>
+<div class="row1">
+<div class="col7 c7">
+<div class="col8 c8"><center><img src="womenimg3.jpg" style="border-radius:50%;height:80px;width:80px;transform:translatey(10px);"></center></div>
+<div class="col9 c9"><div style="text-align:center;font-size:25px;color:#004b97;">Alan Miller</div>CEO/Director<p class="v">Ipsum is simply dummy text</p>
+<p class="v">Ipsum is simply dummy text</p><p class="v">Ipsum is simply</p>
+<input type="submit"value="Your mall gose here"style="width:98%;height:30px;border:none;background:linear-gradient(85deg,purple,#004b97);color:white;text-align:center;"/>
+</div>
+</div>
+<div class="col7 c7">
+<div class="col8 c8"><center><img src="womenimg3.jpg" style="border-radius:50%;height:80px;width:80px;transform:translatey(10px);"></center></div>
+<div class="col9 c9"><div style="text-align:center;font-size:25px;color:#ff0404;">Phillip Alvarado</div>CEO/Director<p class="v">Ipsum is simply dummy text</p>
+<p class="v">Ipsum is simply dummy text</p><p class="v">Ipsum is simply</p>
+<input type="submit"value="Your mall gose here"style="width:98%;height:30px;border:none;background:linear-gradient(65deg,#ff6464,#ff1a1a);color:white;text-align:center;"/>
+</div>
+</div>
+<div class="col7 c7">
+<div class="col8 c8"><center><img src="womenimg3.jpg" style="border-radius:50%;height:80px;width:80px;transform:translatey(10px);"></center></div>
+<div class="col9 c9"><div style="text-align:center;font-size:25px;color:#008080;">Anna Dunn</div>CEO/Director<p class="v">Ipsum is simply dummy text</p>
+<p class="v">Ipsum is simply dummy text</p><p class="v">Ipsum is simply</p>
+<input type="submit"value="Your mall gose here"style="width:98%;height:30px;border:none;background:linear-gradient(35deg,aqua,#008080);color:white;text-align:center;"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="footer2"style="text-align:center; font-size:25px;">
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>About Us</h3>
+      <ul type="none">
+        <li><a href="#">Company Information</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Press Releases</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h3>Customer Service</h3>
+      <ul type="none">
+        <li><a href="#">Help & FAQs</a></li>
+        <li><a href="#">Shipping & Delivery</a></li>
+        <li><a href="#">Returns Policy</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h3>Connect With Us</h3>
+      <ul type="none">
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Social Media</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>&copy; 2023 made by preety yadav</p>
+  </div>
+</div>
+</div>
+</body>
+</html>
